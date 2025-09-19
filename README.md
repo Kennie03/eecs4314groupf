@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# eecs4314groupf
-=======
 # Group F Website
 
 A simple website for Group F to share information, documents, and resources.
@@ -28,4 +25,3 @@ To customize this website:
 1. Update the member information in `index.html`
 2. Add real links to your documents and resources
 3. Modify the styling in `styles.css` as needed
->>>>>>> 59efec2 (Initial commit)
