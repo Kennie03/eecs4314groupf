@@ -44,33 +44,58 @@
 
         <section id="source-code">
             <h2>Source Code</h2>
-            <p>Link to our GitHub repository:</p>
-            <ul>
-                <li><a href="#">Group GitHub Repository</a></li>
-            </ul>
+            <p><a href="#">Group GitHub Repository</a></p>
         </section>
 
         <section id="assignments">
             <h2>Assignments</h2>
 
+            <!-- Assignment 1 -->
             <h3>Assignment 1</h3>
-            <ul>
-                <li><a href="#">Assignment 1 Presentation</a></li>
-                <li><a href="#">Assignment 1 Report</a></li>
-            </ul>
+            <p>
+                <strong>
+                    <a href="https://docs.google.com/presentation/d/1KSigsnNk9F5GzZnHAWcd5LyW2zpTsT5a2Bgvy-IdofI/edit?usp=sharing" target="_blank" rel="noopener">
+                        Assignment 1 Presentation (View in Google Slides)
+                    </a>
+                </strong>
+            </p>
 
+            <!-- Embedded preview with expand toggle -->
+            <div class="iframe-container" id="slidesContainer">
+                <iframe
+                    src="https://docs.google.com/presentation/d/e/2PACX-1vT3f8vyxHjKB8OYAXFFnNfAjDU5wJp6GwgNCxbQdZrcBxbndS5Qklpq3wG1mClrObl6rqUPte9rCUWA/pubembed?start=false&loop=false&delayms=10000"
+                    frameborder="0"
+                    width="960"
+                    height="569"
+                    allowfullscreen="true"
+                    mozallowfullscreen="true"
+                    webkitallowfullscreen="true">
+                </iframe>
+            </div>
+
+            <button class="expand-btn" id="expandBtn" onclick="toggleIframeSize()">Expand Preview</button>
+
+            <p><a href="#">Assignment 1 Report</a></p>
+
+            <!-- Assignment 2 -->
             <h3>Assignment 2</h3>
-            <ul>
-                <li><a href="#">Assignment 2 Presentation</a></li>
-                <li><a href="#">Assignment 2 Report</a></li>
-            </ul>
+            <p><a href="#">Assignment 2 Presentation</a></p>
+            <p><a href="#">Assignment 2 Report</a></p>
 
+            <!-- Assignment 3 -->
             <h3>Assignment 3</h3>
-            <ul>
-                <li><a href="#">Assignment 3 Presentation</a></li>
-                <li><a href="#">Assignment 3 Report</a></li>
-            </ul>
+            <p><a href="#">Assignment 3 Presentation</a></p>
+            <p><a href="#">Assignment 3 Report</a></p>
         </section>
     </main>
+
+    <script>
+        function toggleIframeSize() {
+            const container = document.getElementById('slidesContainer');
+            const button = document.getElementById('expandBtn');
+            container.classList.toggle('expanded');
+            button.textContent = container.classList.contains('expanded') ? 'Collapse Preview' : 'Expand Preview';
+        }
+    </script>
 </body>
 </html>

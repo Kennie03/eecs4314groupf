@@ -198,4 +198,33 @@ footer {
     }
 }
 
-/* Made with Bob */
+/* Expand / Collapse button and iframe transition */
+.iframe-container {
+    text-align: center;
+    transition: all 0.4s ease;
+    margin-bottom: 0.5rem;
+}
+
+.iframe-container.expanded iframe {
+    width: 100%;
+    max-width: 1200px;
+    height: 720px;
+}
+
+.expand-btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 0.95rem;
+}
+
+.expand-btn:hover,
+.expand-btn:focus {
+    background-color: #2980b9;
+    outline: none;
+}
