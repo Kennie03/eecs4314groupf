@@ -60,8 +60,8 @@
                 </strong>
             </p>
 
-            <!-- Embedded preview with expand toggle -->
-            <div class="iframe-container" id="slidesContainer">
+            <!-- Embedded preview -->
+            <div style="text-align:center; margin: 1rem 0;">
                 <iframe
                     src="https://docs.google.com/presentation/d/e/2PACX-1vT3f8vyxHjKB8OYAXFFnNfAjDU5wJp6GwgNCxbQdZrcBxbndS5Qklpq3wG1mClrObl6rqUPte9rCUWA/pubembed?start=false&loop=false&delayms=10000"
                     frameborder="0"
@@ -72,8 +72,6 @@
                     webkitallowfullscreen="true">
                 </iframe>
             </div>
-
-            <button class="expand-btn" id="expandBtn" onclick="toggleIframeSize()">Expand Preview</button>
 
             <p><a href="#">Assignment 1 Report</a></p>
 
@@ -88,14 +86,5 @@
             <p><a href="#">Assignment 3 Report</a></p>
         </section>
     </main>
-
-    <script>
-        function toggleIframeSize() {
-            const container = document.getElementById('slidesContainer');
-            const button = document.getElementById('expandBtn');
-            container.classList.toggle('expanded');
-            button.textContent = container.classList.contains('expanded') ? 'Collapse Preview' : 'Expand Preview';
-        }
-    </script>
 </body>
 </html>
