@@ -228,3 +228,21 @@ footer {
     background-color: #2980b9;
     outline: none;
 }
+/* Make only the assignment Slides iframe responsive on small screens */
+#assignments iframe {
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;         /* works with aspect-ratio */
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Tweak spacing a bit on narrow screens */
+  @media (max-width: 480px) {
+    body { padding: 12px; }
+    h1 { font-size: 1.75rem; }
+    h2 { font-size: 1.5rem; }
+    h3 { font-size: 1.15rem; }
+  }
+  
