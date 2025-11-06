@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Group F - Project Website</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+      /* Optional: small quality-of-life styles for the dropdowns */
+      details { margin: 0.75rem 0; border: 1px solid #ddd; border-radius: 8px; }
+      summary { cursor: pointer; list-style: none; padding: 0.75rem 1rem; font-weight: 600; }
+      summary::-webkit-details-marker { display: none; }
+      details[open] summary { border-bottom: 1px solid #eee; }
+      .details-body { padding: 1rem; }
+    </style>
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to content</a>
@@ -50,19 +58,20 @@
         <section id="assignments">
             <h2>Assignments</h2>
 
-            <!-- Assignment 1 -->
-            <h3>Assignment 1</h3>
-            <p>
-                <strong>
+            <!-- Assignment 1 (Dropdown) -->
+            <details>
+              <summary>Assignment 1</summary>
+              <div class="details-body">
+                <p>
+                  <strong>
                     <a href="https://docs.google.com/presentation/d/1KSigsnNk9F5GzZnHAWcd5LyW2zpTsT5a2Bgvy-IdofI/edit?usp=sharing" target="_blank" rel="noopener">
-                        Assignment 1 Presentation (View in Google Slides)
+                      Assignment 1 Presentation (View in Google Slides)
                     </a>
-                </strong>
-            </p>
+                  </strong>
+                </p>
 
-            <!-- Embedded preview -->
-            <div style="text-align:center; margin: 1rem 0;">
-                <iframe
+                <div style="text-align:center; margin: 1rem 0;">
+                  <iframe
                     src="https://docs.google.com/presentation/d/e/2PACX-1vT3f8vyxHjKB8OYAXFFnNfAjDU5wJp6GwgNCxbQdZrcBxbndS5Qklpq3wG1mClrObl6rqUPte9rCUWA/pubembed?start=false&loop=false&delayms=10000"
                     frameborder="0"
                     width="960"
@@ -70,63 +79,68 @@
                     allowfullscreen="true"
                     mozallowfullscreen="true"
                     webkitallowfullscreen="true">
-                </iframe>
-            </div>
+                  </iframe>
+                </div>
 
-            <p>
-                <a href="docs/TeamF_Assignment1_Conceptual_Architecture_Report.pdf" target="_blank" rel="noopener">
-                  Assignment 1 Report (PDF)
-                </a>
-              </p>              
-              
-              <div style="text-align:center; margin:1rem 0;">
-                <iframe
-                  src="docs/TeamF_Assignment1_Conceptual_Architecture_Report.pdf"
-                  width="960"
-                  height="600"
-                  style="border:none;"
-                  allowfullscreen>
-                </iframe>
+                <p>
+                  <a href="docs/TeamF_Assignment1_Conceptual_Architecture_Report.pdf" target="_blank" rel="noopener">
+                    Assignment 1 Report (PDF)
+                  </a>
+                </p>
+
+                <div style="text-align:center; margin:1rem 0;">
+                  <iframe
+                    src="docs/TeamF_Assignment1_Conceptual_Architecture_Report.pdf"
+                    width="960"
+                    height="600"
+                    style="border:none;"
+                    allowfullscreen>
+                  </iframe>
+                </div>
               </div>
-              
-            <!-- Assignment 2 -->
-            <h3>Assignment 2</h3>
-            <p>
-              <strong>
-                <a href="https://docs.google.com/presentation/d/1-697giTYckmC_zmkbOuvQb1eIlXc4I6HDEF-lqlfn_M/edit?usp=sharing" target="_blank" rel="noopener">
-                  Assignment 2 Presentation (View in Google Slides)
-                </a>
-              </strong>
-            </p>
+            </details>
 
-            <!-- Embedded preview -->
-            <div style="text-align:center; margin: 1rem 0;">
-              <iframe
-                src="https://docs.google.com/presentation/d/e/2PACX-1vRJpkc0xNWVcwSd9SWwRyoxa6fic8noiXL3dn0-lRzT8PtyazdBCCOE3kZVi7GC74YDJgFadbegVvh2/pubembed?start=false&loop=false&delayms=3000"
-                frameborder="0"
-                width="960"
-                height="569"
-                allowfullscreen="true"
-                mozallowfullscreen="true"
-                webkitallowfullscreen="true">
-              </iframe>
-            </div>
+            <!-- Assignment 2 (Dropdown) -->
+            <details open>
+              <summary>Assignment 2</summary>
+              <div class="details-body">
+                <p>
+                  <strong>
+                    <a href="https://docs.google.com/presentation/d/1-697giTYckmC_zmkbOuvQb1eIlXc4I6HDEF-lqlfn_M/edit?usp=sharing" target="_blank" rel="noopener">
+                      Assignment 2 Presentation (View in Google Slides)
+                    </a>
+                  </strong>
+                </p>
 
-            <p>
-              <a href="docs/TeamF_Assignment2_Concrete_Architecture_Report.pdf" target="_blank" rel="noopener">
-                Assignment 2 Report (PDF)
-              </a>
-            </p>
+                <div style="text-align:center; margin: 1rem 0;">
+                  <iframe
+                    src="https://docs.google.com/presentation/d/e/2PACX-1vRJpkc0xNWVcwSd9SWwRyoxa6fic8noiXL3dn0-lRzT8PtyazdBCCOE3kZVi7GC74YDJgFadbegVvh2/pubembed?start=false&loop=false&delayms=3000"
+                    frameborder="0"
+                    width="960"
+                    height="569"
+                    allowfullscreen="true"
+                    mozallowfullscreen="true"
+                    webkitallowfullscreen="true">
+                  </iframe>
+                </div>
 
-            <div style="text-align:center; margin:1rem 0;">
-              <iframe
-                src="docs/TeamF_Assignment2_Concrete_Architecture_Report.pdf"
-                width="960"
-                height="600"
-                style="border:none;"
-                allowfullscreen>
-              </iframe>
-            </div>
+                <p>
+                  <a href="docs/TeamF_Assignment2_Concrete_Architecture_Report.pdf" target="_blank" rel="noopener">
+                    Assignment 2 Report (PDF)
+                  </a>
+                </p>
+
+                <div style="text-align:center; margin:1rem 0;">
+                  <iframe
+                    src="docs/TeamF_Assignment2_Concrete_Architecture_Report.pdf"
+                    width="960"
+                    height="600"
+                    style="border:none;"
+                    allowfullscreen>
+                  </iframe>
+                </div>
+              </div>
+            </details>
 
             <!-- Assignment 3 -->
             <h3>Assignment 3</h3>
